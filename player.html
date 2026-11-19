@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lightweight Responsive ACG Stream Player</title>
+  <style>
+    body { margin: 0; background: #0f0f13; color: #fff; font-family: system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
+    .player-wrapper { width: 90%; max-width: 960px; background: #1a1a24; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+    video { width: 100%; display: block; background: #000; }
+    .meta { padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; font-size: 14px; color: #a0a0b8; }
+    .meta a { color: #ff6b8b; text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="player-wrapper">
+    <video controls preload="metadata" poster="">
+      <source src="sample.mp4" type="video/mp4">
+      Your browser does not support HTML5 video playback.
+    </video>
+    <div class="meta">
+      <span>ACG Web Player v1.0 — Fast, Mobile-Friendly Streaming UI</span>
+      <span>Powered by <a href="https://hentaihavens.com/" target="_blank" rel="noopener">HentaiHavens</a></span>
+    </div>
+  </div>
+</body>
+</html>
